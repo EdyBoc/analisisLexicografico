@@ -99,6 +99,15 @@ AFD* convertirAFN_AFD(AFN* afn) {
                 break;
             }
         }
+
+        // Recorre todos los estados que conforman el conjunto actual del AFD
+        for (int i = 0; i < actual.cantidad; i++) {
+        if (actual.estados[i] == afn->fin) {
+            afd->estadosFinales[procesados] = 1;
+            break;
+        }
+    }
+
         procesados++;
     }
 
