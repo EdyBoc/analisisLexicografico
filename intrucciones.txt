@@ -1,0 +1,26 @@
+- Instrucciones de Uso – Validador de Cadenas mediante AFD en C
+
+1. - Desde la terminal o consola en la carpeta donde están tus archivos:
+gcc main.c regex_parser.c thompson.c afd.c validacion.c -o analizador
+
+2. - Ejecución del validador
+./analizador
+
+
+3- Ejemplo del funcionamiento
+
+Ingrese una expresión regular: a(a|b)*b
+
+AFD construido. Modo validación activo.
+
+Ingrese cadena: aabab
+Cadena ACEPTADA.
+
+Ingrese cadena: aaba
+Cadena RECHAZADA: Falta transicion en el caracter 4 (finaliza con 'a').
+
+Ingrese cadena: aabx
+ERROR: Caracter 'x' no esperado en la posicion 4.
+
+Ingrese cadena: [Enter]
+Programa terminado.
