@@ -1,26 +1,17 @@
 - Instrucciones de Uso – Validador de Cadenas mediante AFD en C
 
-1. - Desde la terminal o consola en la carpeta donde están tus archivos:
-gcc main.c regex_parser.c thompson.c afd.c validacion.c -o analizador
+Intrucciones 
 
-2. - Ejecución del validador
-./analizador
+//Descargar carpeta mingw32 para C
+//Ubicarlo en una carpeta y crear variables de entorno
+//Copiar la url en el path  C:\Variables C\mingw32\bin
 
 
-3- Ejemplo del funcionamiento
+Ejecutar el programa en visual studio
 
-Ingrese una expresión regular: a(a|b)*b
+//Abrir el proyecto en visual
+//Abrir la terminal y correr el siguiente comando:
+gcc main.c regex_parser.c thompson.c afd.c validacion.c -o analizador_afd
 
-AFD construido. Modo validación activo.
-
-Ingrese cadena: aabab
-Cadena ACEPTADA.
-
-Ingrese cadena: aaba
-Cadena RECHAZADA: Falta transicion en el caracter 4 (finaliza con 'a').
-
-Ingrese cadena: aabx
-ERROR: Caracter 'x' no esperado en la posicion 4.
-
-Ingrese cadena: [Enter]
-Programa terminado.
+//creara un ejecutable, llamado analizador_afd 
+//ejecutarlo como ./analizador_afd  luego ingrese una expresión regular
