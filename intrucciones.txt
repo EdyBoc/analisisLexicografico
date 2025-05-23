@@ -7,6 +7,10 @@ Intrucciones
 //Copiar la url en el path  C:\Variables C\mingw32\bin
 
 
+Descargar el código fuente
+//git clone
+https://github.com/EdyBoc/analisisLexicografico.git
+
 Ejecutar el programa en visual studio
 
 //Abrir el proyecto en visual
